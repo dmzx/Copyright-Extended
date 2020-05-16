@@ -1,0 +1,8 @@
+services:
+    _defaults:
+        autowire: true
+    dmzx.copyrightextended.listener:
+        class: dmzx\copyrightextended\event\listener
+        tags: [{ name: event.listener }]
+    dmzx.copyrightextended.controller.acp:
+        class: dmzx\copyrightextended\controller\acp_controller
