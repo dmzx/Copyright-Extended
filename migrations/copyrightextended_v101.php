@@ -1,0 +1,28 @@
+<?php
+/**
+ *
+ * Copyright Extended. An extension for the phpBB Forum Software package.
+ *
+ * @copyright (c) 2020, dmzx, https://www.dmzx-web.net
+ * @license GNU General Public License, version 2 (GPL-2.0)
+ *
+ */
+
+namespace dmzx\copyrightextended\migrations;
+
+class copyrightextended_v101 extends \phpbb\db\migration\container_aware_migration
+{
+	public static function depends_on()
+	{
+		return [
+			'\dmzx\copyrightextended\migrations\copyrightextended_install'
+		];
+	}
+
+	public function update_data()
+	{
+		return [
+			['config.update', ['dmzx_copyrightextended_version', '1.0.1']],
+		];
+	}
+}

@@ -140,7 +140,7 @@ class acp_controller
 			'COPYRIGHTEXTENDED'				=> $this->renderer->render(htmlspecialchars_decode($copyrighttext, ENT_COMPAT)),
 			'COPYRIGHTEXTENDED_EDIT'		=> $this->utils->unparse($copyrighttext),
 			'S_COPYRIGHTEXTENDED_EDIT'		=> $this->request->is_set('edit_copyrightextended'),
-			'COPYRIGHTEXTENDED_VERSION'		=> $this->config['dmzx_scheduledmaintenance_version'],
+			'COPYRIGHTEXTENDED_VERSION'		=> $this->config['dmzx_copyrightextended_version'],
 			'U_ACTION'						=> $this->u_action,
 		]);
 	}
