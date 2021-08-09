@@ -50,7 +50,7 @@ class listener implements EventSubscriberInterface
 	public static function getSubscribedEvents(): array
 	{
 		return [
-			'core.page_footer'	=> 'page_footer',
+			'core.page_footer' => 'page_footer',
 		];
 	}
 
@@ -60,7 +60,7 @@ class listener implements EventSubscriberInterface
 		$copyright = $this->renderer->render(htmlspecialchars_decode($copyrighttext, ENT_COMPAT));
 
 		$this->template->assign_vars([
-			'COPYRIGHT_EXTENDED'	=> ($copyright !== '') ? $copyright : '',
+			'COPYRIGHT_EXTENDED' => ($copyright !== '') ? $copyright : '',
 		]);
 	}
 }
