@@ -29,9 +29,9 @@ class listener implements EventSubscriberInterface
 	/**
 	 * Constructor.
 	 *
-	 * @param db_text					$config_text		Config text object
+	 * @param db_text		$config_text		Config text object
 	 * @param renderer		$renderer			Textformatter renderer object
-	 * @param template				$template			Template object
+	 * @param template		$template			Template object
 	 */
 	public function __construct(
 		db_text $config_text,
