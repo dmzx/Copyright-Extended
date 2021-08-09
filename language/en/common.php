@@ -38,4 +38,5 @@ $lang = array_merge($lang, [
 	'ACP_COPYRIGHTEXTENDED_SETTING_SAVED'	=> 'Copyright Extended saved.',
 	'ACP_COPYRIGHTEXTENDED_EDIT'			=> 'Edit copyright',
 	'ACP_COPYRIGHTEXTENDED_EDIT_EXPLAIN'	=> 'Click the edit icon to edit the copyright text.',
+	'ACP_COPYRIGHTEXTENDED_VERSION'	        => 'Version',
 ]);
