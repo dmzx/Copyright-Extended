@@ -147,7 +147,7 @@ class acp_controller
 		// Set output variables for display in the template
 		$this->template->assign_vars([
 			'S_ERROR'						=> $s_errors,
-			'ERROR_MSG'						=> $s_errors ? implode('<br />', $errors) : '',
+			'ERROR_MSG'						=> $s_errors ? implode('<br>', $errors) : '',
 			'COPYRIGHTEXTENDED'				=> $this->renderer->render(htmlspecialchars_decode($copyrighttext, ENT_COMPAT)),
 			'COPYRIGHTEXTENDED_EDIT'		=> $this->utils->unparse($copyrighttext),
 			'S_COPYRIGHTEXTENDED_EDIT'		=> $this->request->is_set('edit_copyrightextended'),
