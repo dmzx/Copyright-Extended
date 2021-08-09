@@ -10,7 +10,9 @@
 
 namespace dmzx\copyrightextended\migrations;
 
-class copyrightextended_v101 extends \phpbb\db\migration\container_aware_migration
+use phpbb\db\migration\container_aware_migration;
+
+class copyrightextended_v101 extends container_aware_migration
 {
 	public static function depends_on()
 	{

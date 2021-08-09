@@ -10,30 +10,33 @@
 
 namespace dmzx\copyrightextended\event;
 
+use phpbb\config\db_text;
+use phpbb\template\template;
+use phpbb\textformatter\s9e\renderer;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 class listener implements EventSubscriberInterface
 {
-	/** @var \phpbb\config\db_text */
+	/** @var db_text */
 	protected $config_text;
 
-	/** @var \phpbb\textformatter\s9e\renderer */
+	/** @var renderer */
 	protected $renderer;
 
-	/** @var \phpbb\template\template */
+	/** @var template */
 	protected $template;
 
 	/**
 	 * Constructor.
 	 *
-	 * @param \phpbb\config\db_text					$config_text		Config text object
-	 * @param \phpbb\textformatter\s9e\renderer		$renderer			Textformatter renderer object
-	 * @param \phpbb\template\template				$template			Template object
+	 * @param db_text					$config_text		Config text object
+	 * @param renderer		$renderer			Textformatter renderer object
+	 * @param template				$template			Template object
 	 */
 	public function __construct(
-		\phpbb\config\db_text $config_text,
-		\phpbb\textformatter\s9e\renderer $renderer,
-		\phpbb\template\template $template
+		db_text $config_text,
+		renderer $renderer,
+		template $template
 	)
 	{
 		$this->config_text		= $config_text;
