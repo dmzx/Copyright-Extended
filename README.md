@@ -1,6 +1,6 @@
 # Copyright Extended Extension
 
-[![Build Status](https://travis-ci.org/dmzx/Copyright-Extended.svg?branch=master)](https://travis-ci.org/dmzx/Copyright-Extended)
+[![Build Status](https://github.com/dmzx/Copyright-Extended/workflows/Tests/badge.svg)](https://github.com/phpbb-extensions/dmzx/Copyright-Extended)
 
 ## Install
 1. Download the latest release.
